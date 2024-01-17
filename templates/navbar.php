@@ -1,0 +1,183 @@
+<style>
+  @font-face {
+    font-family: 'titre';
+    src: url('../static/font/Lobster-Regular.ttf') format('truetype');
+    /* Ajoutez une version WOFF pour une compatibilité étendue */
+    /* src: url('../static/font/game_over.woff') format('woff'), */
+    
+  }
+  .ml15 {
+  text-transform: uppercase;
+  letter-spacing: 0em;
+
+}
+.ml112 .letter2 {
+  font-family: 'titre', sans-serif !important
+}
+
+.ml112 .line2 {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 20vh;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 100%;
+}
+
+.ml112 .text-wrapper2 {
+  position: relative;
+  display: inline-block;
+
+}
+
+.ml112 .line2 {
+  opacity: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.let {
+    color: initial; /* Réinitialiser la couleur à sa valeur par défaut */
+  }
+.ml112 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.ml15 .word {
+  font-family: 'titre', sans-serif !important;
+  display: inline2-block;
+}
+  #singature {
+    font-family: 'titre', sans-serif
+  }
+</style>
+<!-- <div  class="fixed test bg-white" style="height:7vh ; top:-100vh;width: 100vw;">
+</div> -->
+
+
+  <nav id="navbar" class="bg-white flex items-center    pr-0 justify-between p-6 lg:px-8 sticky  " aria-label="Global"
+    style="height: 7vh;">
+    <div class="flex lg:flex-1">
+      <a href="{{url_for('home')}}"  class="fade-in -m-1.5 p-1.5 text-2xl rounded-full p-2  text-black  " id="singature">
+        <h1 class="ml112">
+          <span class="text-wrapper">
+            <span class="letters2 " >AK</span>
+          </span>
+        </h1>
+      </a>
+    </div>
+
+    <div class="flex justify-center lg:flex lg:gap-x-12 " style="width: 100vw;">
+      <a href="index.php"
+      class="text-base  font-bold leading-6 text-black Bienvenue <?php if($activepage === 'home'){ ?> underline   underline-offset-8 <?php }?>"
+        style="font-family: 'titre', sans-serif !important; z-index: 50 !important;"><i class="bi bi-house-fill"></i> Acceuil</a>
+        
+      <a href="projet.php"
+      class="text-base  font-bold leading-6 text-black Bienvenue <?php if($activepage === 'Projet'){ ?>underline   underline-offset-8 <?php }?>"
+            style="font-family: 'titre', sans-serif !important"><i class="bi bi-person-workspace"></i> Projets</a>
+      <a href="competences.php"
+      class="text-base  font-bold leading-6 text-black Bienvenue <?php if($activepage === 'Compétences'){ ?>underline   underline-offset-8 <?php }?>"
+        style="font-family: 'titre', sans-serif !important"><i class="fa-solid fa-briefcase"></i> Compétences</a>
+      <a href="parcours.php"
+      class="text-base  font-bold leading-6 text-black Bienvenue <?php if($activepage === 'Parcours'){ ?>underline   underline-offset-8 <?php }?>"
+        style="font-family: 'titre', sans-serif !important"><i class="fa-solid fa-graduation-cap"></i> Parcours</a>
+      <a href="About.php"
+      class="text-base  font-bold leading-6 text-black Bienvenue <?php if($activepage === 'About'){ ?>underline   underline-offset-8 <?php }?>"
+        style="font-family: 'titre', sans-serif !important"><i class="bi bi-person-square"></i> À propos</a>
+      <!-- <a href="{{url_for('cv')}}"
+        class="text-base  font-bold leading-6 text-black {% if active_page == 'CV' %}underline2 underline2 underline2-offset-8{% endif %}"><i
+          class="bi bi-file-person-fill"></i> CV</a> -->
+
+      <a href="contact.php  "
+      class="text-base  font-bold leading-6 text-black Bienvenue <?php if($activepage === 'Contact'){ ?>underline   underline-offset-8 <?php }?>"
+        style="font-family: 'titre', sans-serif !important"><i class="bi bi-person-lines-fill"></i> Contact</a>
+    </div>
+
+    <div>
+
+      <select class="form-select w-28 bg-white/30 backdrop-blur-sm border-hidden " name="" id="langSelect" style="font-family: 'titre', sans-serif !important">
+        <option value="fr">French</option>
+        <option value="en">English</option>
+        <!-- Ajoutez autant d'options que nécessaire -->
+
+        <!-- Utilisez des divs pour personnaliser chaque option -->
+        <div class="custom-option" data-value="fr">
+          <img style="height: 5vh; width: 5vw;" src="../static/media/france_flag.png" alt="">
+          French
+        </div>
+        <div class="custom-option" data-value="en">
+          <img style="height: 5vh; width: 5vw;" src="../static/media/uk_flag.png" alt="">
+          English
+        </div>
+      </select>
+
+    </div>
+  </nav>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+    var textWrapper = document.querySelector('.ml112 .letters2');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter2'>$&</span>");
+
+  anime.timeline({ loop: false })
+    .add({
+      targets: '.ml112 .line2',
+      scaleY: [0, 1],
+      opacity: [0.5, 1],
+      easing: "easeOutExpo",
+      duration: 700
+    })
+    .add({
+      targets: '.ml112 .line2',
+      translateX: [0, document.querySelector('.ml112 .letters2').getBoundingClientRect().width + 10],
+      easing: "easeOutExpo",
+      duration: 700,
+      delay: 100
+    })
+    .add({
+      targets: '.ml112 .letter2',
+      opacity: [0, 1],
+      easing: "easeOutExpo",
+      duration: 600,
+      offset: '-=775',
+      delay: (el, i) => 34 * (i + 1),
+
+    })
+    .add({
+      targets: '.ml112',
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+
+
+    
+  // Wrap every letter2 in a span
+  // anime.timeline2({loop: false})
+  // .add({
+  //   targets: '.ml15 .word',
+  //   scale: [10,1],
+  //   opacity: [0,1],
+  //   easing: "easeOutCirc",
+  //   duration: 800,
+  //   delay: (el, i) => 800 * i
+  // }).add({
+  //   targets: '.ml15',
+  //   duration: 800,
+  //   easing: "easeOutExpo",
+  //   delay: 1200
+  // });
+  // Exemple simple de gestionnaire d'événements en JavaScript
+  document.getElementById('yourSelectId').addEventListener('change', function () {
+    var selectedValue = this.value;
+    // Faire quelque chose avec la valeur sélectionnée...
+  });
+
+</script>
+<!-- Mobile menu, show/hide based on menu open state. -->
