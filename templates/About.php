@@ -39,8 +39,8 @@
 
     </div>
     <div style="width: 90vw;height: 20vh; " class="mt-5 fade-in">
-        <h2 class="text-rose-500 text-4xl ml-28 fade-in  ">Qui suis-je ?</h2>
-        <p class="ml-28  mt-2 text-white  text-xl fade-in">
+        <h2 class="fr text-rose-500 text-4xl ml-28 fade-in  ">Qui suis-je ?</h2>
+        <p class="fr ml-28  mt-2 text-white  text-xl fade-in">
             Je suis Adil Khadich, un étudiant passionné de 20 ans spécialisé dans le développement web.
             Originaire du monde du code, j'ai découvert ma passion pour la création de solutions numériques dès mon plus
             jeune âge. Mon parcours académique et mes projets personnels m'ont permis de développer des compétences
@@ -50,6 +50,18 @@
             d'e-sport. L'énergie compétitive et l'esprit d'équipe que l'on retrouve dans ces domaines me motivent au
             quotidien. Ces expériences m'ont également enseigné des leçons précieuses sur la collaboration, la
             résilience et la recherche constante de l'amélioration.
+        </p>
+        <h2 class="en text-rose-500 text-4xl ml-28 fade-in  ">  Who am I?</h2>
+        <p class="en ml-28  mt-2 text-white  text-xl fade-in">
+        I am Adil Khadich, a passionate 20-year-old student specializing in web development.
+            Originally from the world of code, I discovered my passion for creating digital solutions as soon as I could
+            young age. My academic background and personal projects have allowed me to develop skills
+            advanced programming languages such as HTML, CSS, JavaScript, and many others.
+
+            Beyond my love for web development, I am a passionate football fan and a passionate
+            e-sport. The competitive energy and team spirit found in these fields motivate me to
+            These experiences have also taught me valuable lessons about collaboration and
+            resilience and constant search for improvement.
         </p>
         <!-- <img src="../static/media/" class="ml-96 mt-10 rounded" style="width: auto; height: 40vh;"> -->
 
@@ -74,14 +86,27 @@
 
     </div> -->
     <div style="height: fit-content; width: fit-content;" class="mt-5 fade-in">
-        <h2 class="text-rose-500 text-4xl ml-28  mb-2 fade-in ">Mes passions</h2>
-        <h2 class="text-rose-700 text-2xl ml-28  fade-in ">L'E-sport</h2>
-        <p class="ml-28  mt-2 text-white mr-5 text-xl fade-in">
+        <h2 class="fr text-rose-500 text-4xl ml-28  mb-2 fade-in ">Mes passions</h2>
+        <h2 class="en text-rose-500 text-4xl ml-28  mb-2 fade-in ">My passions</h2>
+
+        <h2 class="fr text-rose-700 text-2xl ml-28  fade-in ">L'E-sport</h2>
+        <h2 class="en text-rose-700 text-2xl ml-28  fade-in ">E-sport</h2>
+
+        <p class="fr ml-28  mt-2 text-white mr-5 text-xl fade-in">
             Je suis un grand fan de l'e-sport, et je prends beaucoup de plaisir à soutenir mes équipes préférées.
             J'apprécie particulièrement l'intensité des compétitions et le talent des joueurs. Mon intérêt pour
             l'e-sport va au-delà d'une simple distraction, c'est une véritable passion qui me permet de me connecter
             avec une communauté partageant les mêmes centres d'intérêt. Chaque match est une source d'excitation et de
             moments mémorables pour moi.
+
+
+        </p>
+        <p class="en ml-28  mt-2 text-white mr-5 text-xl fade-in">
+        I’m a big fan of esports, and I enjoy supporting my favorite teams.
+            I particularly appreciate the intensity of the competitions and the talent of the players. My interest in
+            e-sport goes beyond a simple distraction, it’s a real passion that allows me to connect
+            with a community that shares the same interests. Each game is a source of excitement and
+            memorable moments for me.
 
 
         </p>
@@ -94,8 +119,10 @@
             </div>
 
         </div>
-        <h2 class="text-rose-700 text-2xl ml-28  fade-in ">Le football</h2>
-        <p class="ml-28  mt-2 text-white  mr-5 text-xl fade-in">
+        <h2 class="fr text-rose-700 text-2xl ml-28  fade-in ">Le football</h2>
+        <h2 class="en text-rose-700 text-2xl ml-28  fade-in ">Football</h2>
+
+        <p class="fr ml-28  mt-2 text-white  mr-5 text-xl fade-in">
             Le football a vraiment marqué une décennie de ma vie, particulièrement au sein de clubs locaux comme Seynod,
             Annecy-le-Vieux et Vieugy. Bien sûr, ce ne sont pas les clubs les plus renommés, mais chaque expérience a
             laissé une empreinte significative sur moi. L'esprit d'équipe, que j'ai cultivé sur le terrain, s'est avéré
@@ -105,6 +132,17 @@
             ma manière de travailler. Ces clubs, bien que modestes, ont donc joué un rôle déterminant en me fournissant
             des compétences humaines et professionnelles précieuses, et je suis reconnaissant pour chaque leçon tirée de
             ces expériences.
+        </p>
+        <p class="en ml-28  mt-2 text-white  mr-5 text-xl fade-in">
+        Football really marked a decade of my life, especially in local clubs like Seynod,
+            Annecy-le-Vieux and Vieugy. Of course, these are not the most renowned clubs, but each experience has
+            left a significant imprint on me. The team spirit, which I cultivated in the field, turned out
+            be a key transferable skill in my web development career. Working as a team, just like
+            on the football field, is essential in the development world. Collaboration, communication
+            effective and collective problem solving are elements that have found a natural place in
+            the way I work. These clubs, while modest, were instrumental in providing me with
+            valuable human and professional skills, and I am grateful for every lesson learned from
+            these experiences.
         </p>
         <div class="flex justify-center fade-in " style="width: 100vw;">
             <img src="../static/media/foot.JPG" class="ml-28 rounded mb-5 mt-5 object-cover" style="width: 30vw; height: 52vh;">
@@ -118,7 +156,10 @@
     </div>
 
     </div>
-    <a href="{{ url_for('download_pdf') }}" class="Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+    <a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+        <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
+    </a>
+    <a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
         <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
     </a>
     <a href="https://github.com/Adkhey74" target="_blank" class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-gray-900"><i class="bi bi-github"></i></a>
@@ -142,6 +183,9 @@
     <script src="../static/JS/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@vitalets/google-translate-api"></script>
 
+    <?php
+    include 'tanslate.php'
+    ?>
     <script>
         $(document).ready(function() {
             $('#langSelect').change(function() {

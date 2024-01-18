@@ -19,6 +19,9 @@
 <?php 
   include 'navbar.php'
   ?> 
+  <?php
+    include 'tanslate.php'
+    ?>
     <div id="particles-js" style="height: 185vh;width: 100vw;z-index: -50; position: fixed; top: 0;">
   </div>
   <div class=" flex justify-center items-center fade-in " style="height: 93vh;  width: 100vw;">
@@ -49,11 +52,12 @@
 
   </div>
   </div>
-  <a href="{{ url_for('download_pdf') }}"
-    class="Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1"
-    download style=" overflow: hidden;" target="_blank">
-    <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
-  </a>
+  <a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+        <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
+    </a>
+    <a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+        <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
+    </a>
   <a href="https://github.com/Adkhey74" target="_blank"
     class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-gray-900"><i
       class="bi bi-github"></i></a>
@@ -72,6 +76,8 @@
 
 
 </body>
+
+
 <script>
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()

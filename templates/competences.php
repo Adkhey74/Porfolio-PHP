@@ -7,11 +7,11 @@
     <title>Compétences</title>
     <link rel="icon" href="../static/house-solid.svg" type="image/x-icon">
 
-    <?php 
-  include 'link.php';
-  $activepage = 'Compétences';
+    <?php
+    include 'link.php';
+    $activepage = 'Compétences';
 
-  ?>
+    ?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -26,25 +26,32 @@
     <div class="scrollbar" id="style-1">
         <div class="force-overflow"></div>
     </div>
-    <?php 
-  include 'navbar.php'
-  ?>    <div id="particles-js" style="height: 185vh;width: 100vw;z-index: -50; position: fixed; top: 0;">
+    <?php
+    include 'navbar.php'
+    ?> <div id="particles-js" style="height: 185vh;width: 100vw;z-index: -50; position: fixed; top: 0;">
 
 
     </div>
     <div style="width: 99vw;" class="flex mt-3 ml-2 justify-center fade-in">
-        <div class="input-group text-white word " style="width: 20vw;">
-            <span class="input-group-text bg-white/40 backdrop-blur text-black border-hidden"
-                style="font-family: 'titre', sans-serif !important">Catégories</span>
-            <select name="" id="Catégories" class=" form-select bg-white/40 backdrop-blur text-black border-hidden"
-                style="font-family: 'titre', sans-serif !important">
+        <div class="input-group text-white word en " style="width: 20vw;">
+            <span class="input-group-text bg-white/40 backdrop-blur text-black border-hidden  rounded-r-lg" style="font-family: 'titre', sans-serif !important">Categories</span>
+
+            <select name="" id="Catégories" class=" form-select bg-white/40 backdrop-blur text-black border-hidden" style="font-family: 'titre', sans-serif !important">
                 <option value="" class="bg-white backdrop-blur"></option>
-                <option value="front-end" class="bg-light-blue backdrop-blur"
-                    style="font-family: 'titre', sans-serif !important">Front-end</option>
-                <option value="back-end" class="bg-light-green backdrop-blur"
-                    style="font-family: 'titre', sans-serif !important">Back-end</option>
-                <option value="databases" class="bg-light-pink backdrop-blur"
-                    style="font-family: 'titre', sans-serif !important">Databases</option>
+                <option value="front-end" class="bg-light-blue backdrop-blur" style="font-family: 'titre', sans-serif !important">Front-end</option>
+                <option value="back-end" class="bg-light-green backdrop-blur" style="font-family: 'titre', sans-serif !important">Back-end</option>
+                <option value="databases" class="bg-light-pink backdrop-blur" style="font-family: 'titre', sans-serif !important">Databases</option>
+            </select>
+
+        </div>
+        <div class="input-group text-white word fr " style="width: 20vw;">
+            <span class="input-group-text bg-white/40 backdrop-blur text-black border-hidden  rounded-r-lg" style="font-family: 'titre', sans-serif !important">Catégories</span>
+
+            <select name="" id="Catégories" class=" form-select bg-white/40 backdrop-blur text-black border-hidden" style="font-family: 'titre', sans-serif !important">
+                <option value="" class="bg-white backdrop-blur"></option>
+                <option value="front-end" class="bg-light-blue backdrop-blur" style="font-family: 'titre', sans-serif !important">Front-end</option>
+                <option value="back-end" class="bg-light-green backdrop-blur" style="font-family: 'titre', sans-serif !important">Back-end</option>
+                <option value="databases" class="bg-light-pink backdrop-blur" style="font-family: 'titre', sans-serif !important">Databases</option>
             </select>
 
         </div>
@@ -219,16 +226,14 @@
 
 
     </div>
-    <a href="{{ url_for('download_pdf') }}"
-        class="Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1"
-        download style=" overflow: hidden;" target="_blank">
+    <a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
         <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
     </a>
-    <a href="https://github.com/Adkhey74" target="_blank"
-        class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-gray-900"><i
-            class="bi bi-github"></i></a>
-    <div id=""
-        class="fade-in Bienvenue fixed mb-1 right-0 ml-2 bottom-0 btn rounded-xl text-xl  blur-sm text-white  btn  h-10 ml-2 mt-1  hover:blur-none ">
+    <a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+        <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
+    </a>
+    <a href="https://github.com/Adkhey74" target="_blank" class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-gray-900"><i class="bi bi-github"></i></a>
+    <div id="" class="fade-in Bienvenue fixed mb-1 right-0 ml-2 bottom-0 btn rounded-xl text-xl  blur-sm text-white  btn  h-10 ml-2 mt-1  hover:blur-none ">
         <span style="font-family: 'titre', sans-serif !important">Dev by Adil Khadich</span>
 
     </div>
@@ -243,13 +248,17 @@
 
     </div>
     </div>
-    
+
     <script src="../static/JS/particles.js"></script>
     <script script src="../static/JS/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@vitalets/google-translate-api"></script>
-
+    <?php
+    include 'tanslate.php'
+    ?>
     <script>
-        anime.timeline({ loop: false })
+        anime.timeline({
+                loop: false
+            })
             .add({
                 targets: '.ml15 .word',
                 scale: [14, 1],
@@ -419,8 +428,10 @@
             }
 
         })
-        $(document).ready(function () {
-            $('#langSelect').change(function () { translate(); });
+        $(document).ready(function() {
+            $('#langSelect').change(function() {
+                translate();
+            });
 
             function translate() {
 
@@ -432,7 +443,7 @@
                 var url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=" + sourceLang + "&tl=" + targetLang + "&dt=t&q=" + encodeURI(sourceText);
                 //console.log(url);
 
-                $.getJSON(url, function (data) {
+                $.getJSON(url, function(data) {
                     $('#translatable').val(data[0][0][0]);
                 });
 
@@ -442,7 +453,7 @@
 
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             const images = document.querySelectorAll('.fade-in');
 
             const observer = new IntersectionObserver(entries => {

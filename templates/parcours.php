@@ -7,11 +7,11 @@
     <title>Parcours</title>
     <link rel="icon" href="../static/house-solid.svg" type="image/x-icon">
 
-    <?php 
-  include 'link.php';
-  $activepage = 'Parcours';
+    <?php
+    include 'link.php';
+    $activepage = 'Parcours';
 
-  ?>
+    ?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -26,19 +26,18 @@
     <div class="scrollbar" id="style-1">
         <div class="force-overflow"></div>
     </div>
-    <?php 
-  include 'navbar.php'
-  ?> 
+    <?php
+    include 'navbar.php'
+    ?>
     <div id="particles-js" style="height: 185vh;width: 100vw;z-index: -50; position: fixed; top: 0;">
     </div>
     <div class="flex justify-center w-screen fade-in">
         <div class="grid grid-cols-2 w-96  mt-10 " style="width: 30vw;">
-            <button id="scolaire"
-                class="rounded h-10 text-white  bg-neutral-700 hover:bg-white/20 w-60 place-self-center"><i
-                    class="fa-solid fa-graduation-cap"></i> Scolaire</button>
-            <button id="pro"
-                class="rounded h-10 text-white bg-white/40 backdrop-blur hover:bg-white/20 w-60 place-self-center"><i
-                    class="fa-solid fa-user-tie"></i> Professionnels</button>
+            <button id="scolaire" class="scolaire rounded h-10 text-white fr bg-neutral-700 hover:bg-white/20 w-60 place-self-center"><i class="fa-solid fa-graduation-cap"></i> Scolaire</button>
+            <button id="pro" class="pro rounded h-10 text-white fr bg-white/40 backdrop-blur hover:bg-white/20 w-60 place-self-center"><i class="fa-solid fa-user-tie"></i> Professionnels</button>
+
+            <button id="scolaire" class=" scolaire rounded h-10 text-white en bg-neutral-700 hover:bg-white/20 w-60 place-self-center"><i class="fa-solid fa-graduation-cap"></i> Academic</button>
+            <button id="pro" class="pro rounded h-10 text-white en bg-white/40 backdrop-blur hover:bg-white/20 w-60 place-self-center"><i class="fa-solid fa-user-tie"></i> professionals</button>
 
         </div>
     </div>
@@ -92,16 +91,14 @@
 
 
     </div>
-    <a href="{{ url_for('download_pdf') }}"
-        class="Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1"
-        download style=" overflow: hidden;" target="_blank">
+    <a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
         <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
     </a>
-    <a href="https://github.com/Adkhey74" target="_blank"
-        class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-gray-900"><i
-            class="bi bi-github"></i></a>
-    <div id=""
-        class="fade-in Bienvenue fixed mb-1 right-0 ml-2 bottom-0 btn rounded-xl text-xl  blur-sm text-white  btn  h-10 ml-2 mt-1  hover:blur-none ">
+    <a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+        <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
+    </a>
+    <a href="https://github.com/Adkhey74" target="_blank" class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-gray-900"><i class="bi bi-github"></i></a>
+    <div id="" class="fade-in Bienvenue fixed mb-1 right-0 ml-2 bottom-0 btn rounded-xl text-xl  blur-sm text-white  btn  h-10 ml-2 mt-1  hover:blur-none ">
         <span style="font-family: 'titre', sans-serif !important">Dev by Adil Khadich</span>
 
     </div>
@@ -121,26 +118,28 @@
     <script src="../static/JS/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@vitalets/google-translate-api"></script>
 
-
+    <?php
+    include 'tanslate.php'
+    ?>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
 
-            $('#scolaire').click(() => {
-    $('#scolaire').removeClass('bg-white/40').addClass('bg-neutral-700');
-    $('#pro').removeClass('bg-neutral-700').addClass('bg-white/40');
+            $('.scolaire').click(() => {
+                $('.scolaire').removeClass('bg-white/40').addClass('bg-neutral-700');
+                $('.pro').removeClass('bg-neutral-700').addClass('bg-white/40');
 
-    $('#par_pro').addClass('hidden');
-    $('#par_scol').removeClass('hidden');
-});
+                $('#par_pro').addClass('hidden');
+                $('#par_scol').removeClass('hidden');
+            });
 
-$('#pro').click(() => {
-    $('#scolaire').removeClass('bg-neutral-700').addClass('bg-white/40');
-    $('#pro').removeClass('bg-white/40').addClass('bg-neutral-700');
+            $('.pro').click(() => {
+                $('.scolaire').removeClass('bg-neutral-700').addClass('bg-white/40');
+                $('.pro').removeClass('bg-white/40').addClass('bg-neutral-700');
 
-    $('#par_scol').addClass('hidden');
-    $('#par_pro').removeClass('hidden');
-});
+                $('#par_scol').addClass('hidden');
+                $('#par_pro').removeClass('hidden');
+            });
 
 
 
