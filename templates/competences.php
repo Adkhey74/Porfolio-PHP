@@ -33,7 +33,7 @@
 
     </div>
     <div style="width: 99vw;" class="flex mt-3 ml-2 justify-center fade-in">
-        <div class="input-group text-white word en " style="width: 20vw;">
+        <!-- <div class="input-group text-white word en " style="width: 20vw;">
             <span class="input-group-text bg-white/40 backdrop-blur text-black border-hidden  rounded-r-lg" style="font-family: 'titre', sans-serif !important">Categories</span>
 
             <select name="" id="Catégories" class=" form-select bg-white/40 backdrop-blur text-black border-hidden" style="font-family: 'titre', sans-serif !important">
@@ -43,7 +43,7 @@
                 <option value="databases" class="bg-light-pink backdrop-blur" style="font-family: 'titre', sans-serif !important">Databases</option>
             </select>
 
-        </div>
+        </div> -->
         <div class="input-group text-white word fr " style="width: 20vw;">
             <span class="input-group-text bg-white/40 backdrop-blur text-black border-hidden  rounded-r-lg" style="font-family: 'titre', sans-serif !important">Catégories</span>
 
@@ -215,9 +215,6 @@
 
             </div>
 
-
-
-
         </div>
 
 
@@ -226,13 +223,13 @@
 
 
     </div>
-    <a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+    <a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
         <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
     </a>
-    <a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+    <a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
         <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
     </a>
-    <a href="https://github.com/Adkhey74" target="_blank" class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-gray-900"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/Adkhey74" target="_blank" class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-red-500"><i class="bi bi-github"></i></a>
     <div id="" class="fade-in Bienvenue fixed mb-1 right-0 ml-2 bottom-0 btn rounded-xl text-xl  blur-sm text-white  btn  h-10 ml-2 mt-1  hover:blur-none ">
         <span style="font-family: 'titre', sans-serif !important">Dev by Adil Khadich</span>
 
@@ -386,8 +383,6 @@
                 $('#Python').addClass('hidden')
                 $('#postgres').removeClass('hidden')
                 $('#sqlserver').removeClass('hidden')
-
-
                 $('#Mysql').removeClass('hidden')
                 $('#Mysql').addClass('fade-in')
 
@@ -404,10 +399,8 @@
                 $('#c-sharp').removeClass('hidden')
                 $('#Python').removeClass('hidden')
                 $('#Mysql').removeClass('hidden')
-
                 $('#postgres').removeClass('hidden')
                 $('#sqlserver').removeClass('hidden')
-
                 $('#HTML').addClass('fade-in')
                 $('#CSS').addClass('fade-in')
                 $('#bootstrap').addClass('fade-in')
@@ -417,14 +410,6 @@
                 $('#c-sharp').addClass('fade-in')
                 $('#Python').addClass('fade-in')
                 $('#Mysql').addClass('fade-in')
-
-
-
-
-
-
-
-
             }
 
         })

@@ -76,8 +76,8 @@ include 'navbar.php'
 
   <div class="flex justify-end items-center" style="width: 50vw; height: 80vh;">
     <div class="Bienvenue text-6xl flex items-center text-white mr-14 " style="height: 20vh; width: 27vw;">
-      <h1 class="ml11 grid grid-col-20 " style="width: 23vw;">
-        <span class="text-wrapper fr">
+      <h1 class="ml11 grid  " style="width: 26vw;">
+        <span class="text-wrapper fr grid-col-16">
           <span class="line line1 fr"></span>
           <h1 class="letters1 fr">
             Bienvenue, je suis Adil développeur web
@@ -94,20 +94,22 @@ include 'navbar.php'
 
 
     </div>
-    <h1 class="object-cover  rounded-full hover:scale-110 text-8xl text-black Bienvenue bg-white backdrop-blur-sm flex justify-center items-center " style="font-family: 'titre', sans-serif !important;height: 35vh; width: 17vw;">AK</h1>
+    <h1 class="object-cover  rounded-full hover:scale-110 text-8xl  Bienvenue  backdrop-blur-sm flex justify-center
+     items-center transition duration-500 ease-in-out bg-gray-100 cursor-pointer scale-100 p-28 hover:bg-red-500 hover:text-white transform hover:-translate-y-1" 
+     style="font-family: 'titre', sans-serif !important;">AK</h1>
 
   </div>
 
 
 
 </div>
-<a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3 test   ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style="left:-250px; overflow: hidden;" target="_blank">
+<a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3 test   ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl    text-gray-100 btn   h-10 ml-2 mt-1 transition duration-500 ease-in-out bg-gray-950 cursor-pointer hover:bg-red-500 hover:text-white transform hover:-translate-y-1" download style="left:-250px; overflow: hidden;" target="_blank">
   <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
 </a>
-<a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3 test   ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-gray-900 btn   h-10 ml-2 mt-1" download style="left:-250px; overflow: hidden;" target="_blank">
+<a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3 test   ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style="left:-250px; overflow: hidden;" target="_blank">
   <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
 </a>
-<a href="https://github.com/Adkhey74" target="_blank" class="fade-in fixed mb-3 let-0 ml-2  test bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-gray-900" style="left:-250px;"><i class="bi bi-github"></i></a>
+<a href="https://github.com/Adkhey74" target="_blank" class="fade-in fixed mb-3 let-0 ml-2  test bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-red-500" style="left:-250px;"><i class="bi bi-github"></i></a>
 <div id="" class="fade-in Bienvenue fixed mb-3 right-0 ml-2 bottom-0 btn rounded-xl text-xl  blur-sm text-white  btn  h-10 ml-2 mt-1  hover:blur-none ">
   <span style="font-family: 'titre', sans-serif !important">Dev by Adil Khadich</span>
 
@@ -168,7 +170,7 @@ include 'tanslate.php'
 
       var textWrapper = document.querySelector('.ml11 .letters2');
 
-      textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|,)/g, "<span class='en'>$&</span>");
+      textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|,)/g, "<span class='en hover:text-red-500 cursor-pointer'>$&</span>");
 
       anime.timeline({
           loop: false
@@ -206,7 +208,7 @@ include 'tanslate.php'
 
       var textWrapper = document.querySelector('.ml11 .letters1');
 
-      textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|,)/g, "<span class='letter fr'>$&</span>");
+      textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|,)/g, "<span class='letter fr hover:text-red-500 cursor-pointer'>$&</span>");
 
       anime.timeline({
           loop: false
@@ -287,7 +289,7 @@ include 'tanslate.php'
 
         var textWrapper = document.querySelector('.ml11 .letters1');
 
-        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|,)/g, "<span class='letter fr'>$&</span>");
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|,)/g, "<span class='letter fr hover:text-red-500 cursor-pointer'>$&</span>");
 
         anime.timeline({
             loop: false

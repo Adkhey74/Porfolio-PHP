@@ -45,18 +45,16 @@
     display: block;
     opacity: 1;
     transform: perspective(400px) rotateX(0deg);
-    animation: flipDown 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
 
 }
 
 
-@keyframes flipDown {
+@keyframes fadeIn {
     from {
-        transform: perspective(400px) rotateX(-90deg);
         opacity: 0;
     }
     to {
-        transform: perspective(400px) rotateX(0deg);
         opacity: 1;
     }
 }
