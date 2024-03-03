@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcours</title>
-    <link rel="icon" href="../static/house-solid.svg" type="image/x-icon">
+    <link rel="icon" href="static/house-solid.svg" type="image/x-icon">
 
     <?php
     include 'link.php';
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="icon" href="../static/media/logo-transparent-png.png" sizes="64x64" type="image/png">
+    <link rel="icon" href="static/media/logo-transparent-png.png" sizes="64x64" type="image/png">
 
 </head>
 <style>
@@ -46,12 +46,12 @@
 
 
         <div id="par_scol" class="">
-            <img src="../static/media/parcour_sco.png" alt="" class="rounded " style="width: 70vw; height: 70vh;">
+            <img src="static/media/parcour_sco.png" alt="" class="rounded " style="width: 70vw; height: 70vh;">
 
 
         </div>
         <div id="par_pro" class=" hidden ">
-            <img src="../static/media/parcour_pro.png" alt="" class="rounded " style="width: 70vw; height: 70vh;">
+            <img src="static/media/parcour_pro.png" alt="" class="rounded " style="width: 70vw; height: 70vh;">
 
         </div>
         <!-- <div id="par_pro" class="grid grid-cols-2 w-96 hidden ">
@@ -91,17 +91,17 @@
 
 
     </div>
-    <a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+    <a href="static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
         <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
     </a>
-    <a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+    <a href="static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
         <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
     </a>
     <a href="https://github.com/Adkhey74" target="_blank" class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-red-500"><i class="bi bi-github"></i></a>
-    <a href="../static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+    <a href="static/media/CV.pdf" class="fr Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
         <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
     </a>
-    <a href="../static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
+    <a href="static/media/CV_anglais.pdf" class="en Bienvenue fade-in fixed mb-3  let-0 ml-2 w-12 hover:w-20 bottom-12 btn rounded-xl text-xl   bg-gray-950 text-white hover:bg-red-500 btn   h-10 ml-2 mt-1" download style=" overflow: hidden;" target="_blank">
         <i class="bi bi-file-earmark-text"></i> <span style="font-family: 'titre', sans-serif !important">CV</span>
     </a>
     <a href="https://github.com/Adkhey74" target="_blank" class="fade-in fixed mb-3 let-0 ml-2 bottom-0 btn rounded-xl  bg-gray-950 text-xl text-white hover:bg-red-500"><i class="bi bi-github"></i></a>    <div id="" class="fade-in Bienvenue fixed mb-1 right-0 ml-2 bottom-0 btn rounded-xl text-xl  blur-sm text-white  btn  h-10 ml-2 mt-1  hover:blur-none ">
@@ -120,8 +120,8 @@
     </div>
 
 
-    <script src="../static/JS/particles.js"></script>
-    <script src="../static/JS/app.js"></script>
+    <script src="static/JS/particles.js"></script>
+    <script src="static/JS/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@vitalets/google-translate-api"></script>
 
     <?php

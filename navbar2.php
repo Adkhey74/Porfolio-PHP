@@ -1,9 +1,9 @@
 <style>
     @font-face {
       font-family: 'titre';
-      src: url('../static/font/Lobster-Regular.ttf') format('truetype');
+      src: url('static/font/Lobster-Regular.ttf') format('truetype');
       /* Ajoutez une version WOFF pour une compatibilité étendue */
-      /* src: url('../static/font/game_over.woff') format('woff'), */
+      /* src: url('static/font/game_over.woff') format('woff'), */
     }
   
     #singature {
@@ -52,11 +52,11 @@
   
         <!-- Utilisez des divs pour personnaliser chaque option -->
         <div class="custom-option" data-value="fr">
-          <img style="height: 5vh; width: 5vw;" src="../static/media/france_flag.png" alt="">
+          <img style="height: 5vh; width: 5vw;" src="static/media/france_flag.png" alt="">
           French
         </div>
         <div class="custom-option" data-value="en">
-          <img style="height: 5vh; width: 5vw;" src="../static/media/uk_flag.png" alt="">
+          <img style="height: 5vh; width: 5vw;" src="static/media/uk_flag.png" alt="">
           English
         </div>
       </select>

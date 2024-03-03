@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV</title>
-        <link rel="icon" href="../static/house-solid.svg" type="image/x-icon">
+        <link rel="icon" href="static/house-solid.svg" type="image/x-icon">
 
         {% include 'link.html' %}
 
@@ -19,7 +19,7 @@
 
             <div class="flex justify-center    absolute   " style=" left: 35%; top: 9%;">
 
-                <img class=" rounded  " src="../static/media/CV.png" alt="" style="height: 90vh ;width: 30vw;">
+                <img class=" rounded  " src="static/media/CV.png" alt="" style="height: 90vh ;width: 30vw;">
                 <a href="{{ url_for('download_pdf') }}" class="btn btn-danger h-10 ml-2 mt-1" download>
                     <i class="bi bi-download"></i> PDF
                 </a>

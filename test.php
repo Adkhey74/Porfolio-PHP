@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acceuil</title>
-  <link rel="icon" href="../static/media/logo-transparent-png.png" sizes="64x64" type="image/png">
+  <link rel="icon" href="static/media/logo-transparent-png.png" sizes="64x64" type="image/png">
 
   {% include 'link.html' %}
 
@@ -78,7 +78,7 @@
         <div class="grid grid-cols-3 gap-24 mb-5">
             <div id="HTML" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/html.png" alt="" class="r" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/html.png" alt="" class="r" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -92,7 +92,7 @@
             </div>
             <div  id="CSS" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/csspng.png" alt="" class="r" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/csspng.png" alt="" class="r" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -106,7 +106,7 @@
             </div>
             <div  id="JS" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/js.png" alt="" class="r" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/js.png" alt="" class="r" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -120,7 +120,7 @@
             </div>
             <div  id="PHP" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/PHP.png" alt="" class="r" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/PHP.png" alt="" class="r" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -134,7 +134,7 @@
             </div>
             <div  id="c-sharp" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/csharp.svg.png" alt="" class="r" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/csharp.svg.png" alt="" class="r" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -148,7 +148,7 @@
             </div>
             <div  id="Mysql" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/mysql.png" alt="" class="r" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/mysql.png" alt="" class="r" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -162,7 +162,7 @@
             </div>
             <div  id="postgres" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/postgres.png" alt="" class="" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/postgres.png" alt="" class="" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -176,7 +176,7 @@
             </div>
             <div  id="sqlserver" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/sqlserver.png" alt="" class="" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/sqlserver.png" alt="" class="" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -190,7 +190,7 @@
             </div>
             <div  id="Python" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/python.png" alt="" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/python.png" alt="" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -204,7 +204,7 @@
             </div>
             <div  id="bootstrap" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/Bootstrap.png" alt="" class="" style="width: 10vw; height:20vh;">
+                    <img src="static/media/Bootstrap.png" alt="" class="" style="width: 10vw; height:20vh;">
 
                 </div>
                 <div class="flex justify-center">
@@ -218,7 +218,7 @@
             </div>
             <div  id="Tailwind" class=" rounded p-5 fade-in" style="width: 20vw;">
                 <div class="flex justify-center">
-                    <img src="../static/media/Tailwindcss.svg.png" alt="" class="" style="width: 10vw; height: 20vh;">
+                    <img src="static/media/Tailwindcss.svg.png" alt="" class="" style="width: 10vw; height: 20vh;">
 
                 </div>
                 <div class="flex justify-center">

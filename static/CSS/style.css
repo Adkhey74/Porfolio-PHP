@@ -89,9 +89,9 @@ body{margin: 0; padding: 0;}
 
 @font-face {
     font-family: 'titre';
-    src: url('../static/font/Lobster-Regular.ttf') format('truetype');
+    src: url('static/font/Lobster-Regular.ttf') format('truetype');
     /* Ajoutez une version WOFF pour une compatibilité étendue */
-    /* src: url('../static/font/game_over.woff') format('woff'), */
+    /* src: url('static/font/game_over.woff') format('woff'), */
     
   }
   .ml15 {
@@ -202,9 +202,9 @@ element.style {
 
 @font-face {
     font-family: 'titre';
-    src: url('../static/font/DancingScript-VariableFont_wght.ttf');
+    src: url('static/font/DancingScript-VariableFont_wght.ttf');
     /* Ajoutez une version WOFF pour une compatibilité étendue */
-    /* src: url('../static/font/game_over.woff') format('woff'), */
+    /* src: url('static/font/game_over.woff') format('woff'), */
 }
 
 * {
